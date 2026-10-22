@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Button</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .select-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: 0.2s ease;
+        }
+
+        .select-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 style="margin-bottom: 20px; font-size: 32px; color: #333;">FATIMA ZARA OSMAN TUNTEIYA</h1>
+        <button class="select-btn" id="selectBtn">Select</button>
+        <p id="message" style="margin-top: 20px; font-size: 22px; color: #d11a2a; font-weight: bold; display: none;">
+            STOP WATCHING INDIAN MOVIES
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('selectBtn').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
